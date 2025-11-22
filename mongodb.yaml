@@ -22,4 +22,5 @@
        replace: 0.0.0.0
     - name: restarting mongodb
       ansible.builtin.service:
+       name: mongod
        state: restarted
