@@ -55,7 +55,7 @@
      state: installed
 
   - name: check products load or not
-    ansible.builtin.command: mongosh --host mongodb.daws.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
+    ansible.builtin.command: mongosh --host 172.31.65.246 --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
     register: catalogue_output
 
   - name: print the output
