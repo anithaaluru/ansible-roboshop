@@ -22,7 +22,7 @@
    - name: creating html directory
      ansible.builtin.file:
        path: /usr/share/nginx/html
-       state: present
+       state: directory
    - name: downloading the content
      ansible.builtin.get_url:
       url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
