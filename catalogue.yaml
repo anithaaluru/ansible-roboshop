@@ -59,4 +59,4 @@
 
   - name: print the output
     system.builtin.debug:
-     msg: "{{ catalogue_output }}"
+    msg: "{{ catalogue_output }}"
