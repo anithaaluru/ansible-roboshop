@@ -37,7 +37,7 @@
      ansible.builtin.file:
        path: /etc/nginx/nginx.conf
        state: absent
-   - name: copy nginx service
+   - name: copy nginx conf
      ansible.builtin.copy:
       src: nginx.conf
       dest: /etc/nginx/nginx.conf
