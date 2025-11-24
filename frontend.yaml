@@ -12,6 +12,7 @@
        state: installed
    - name: start and enable nginx
      ansible.builtin.service:
+       name: nginx
        state: started
        enabled: yes
    - name: removing the html directory
@@ -42,6 +43,7 @@
       dest: /etc/nginx/nginx.conf
    - name: restarting the server
      ansible.builtin.service:
+       name: nginx
        state: restarted
 
 
