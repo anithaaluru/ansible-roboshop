@@ -10,8 +10,8 @@
      ansible.builtin.dnf:
       name: nodejs
       state: installed
-   - name: creating cart
-     ansible.builtin.cart:
+   - name: creating user
+     ansible.builtin.user:
       name: roboshop
       shell: /sbin/nologin
       home: /app
