@@ -53,10 +53,11 @@
     ansible.builtin.dnf:
      name: mongodb-mongosh
      state: installed
-  - name: loading the content
-    ansible.builtin.command: mongosh --host mongodb.daws.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")
-    register: catalogue_output
 
-  - name: print the output
-    system.builtin.debug:
-    msg: "{{ catalogue_output }}"
+  # - name: loading the content
+  #   ansible.builtin.command: mongosh --host mongodb.daws.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")
+  #   register: catalogue_output
+
+  # - name: print the output
+  #   system.builtin.debug:
+  #   msg: "{{ catalogue_output }}"
