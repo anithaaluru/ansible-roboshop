@@ -58,7 +58,7 @@
    - name: import data
      community.mysql.mysql_db:
        name: all
-       login_user: shipping
+       login_user: root
        login_password: RoboShop@1
        login_hosts: 172.31.75.67
        state: import
