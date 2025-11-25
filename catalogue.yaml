@@ -54,13 +54,13 @@
      name: mongodb-mongosh
      state: installed
 
-  # - name: check products load or not
-  #   ansible.builtin.command: mongosh --host 172.31.77.182 --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
-  #   register: catalogue_output
+  - name: check products load or not
+    ansible.builtin.command: mongosh --host 172.31.77.182 --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
+    register: catalogue_output
 
-  # - name: print the output
-  #   ansible.builtin.debug:
-  #     msg: "{{ catalogue_output }}"
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ catalogue_output }}"
 
   # - name: load the products
   #   ansible.builtin.shell: mongosh --host 172.31.77.182 </app/db/master-data.js
