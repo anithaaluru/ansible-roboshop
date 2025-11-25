@@ -12,7 +12,7 @@
        state: installed
    - name: start and enable server
      ansible.builtin.service:
-      name: rabbitmq
+      name: rabbitmq-server
       state: started
       enabled: yes
    - name: setup permissions
