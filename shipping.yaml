@@ -18,7 +18,7 @@
    - name: downloading the content
      ansible.builtin.get_url:
        url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip 
-       path: /tmp/shipping.zip
+       dest: /tmp/shipping.zip
    - name: extracting the data
      ansible.builtin.unarchive:
        src: /tmp/shipping.zip
