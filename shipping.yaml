@@ -62,7 +62,7 @@
        name: all
        login_user: root
        login_password: RoboShop@1
-       login_host: 172.31.76.95
+       login_host: 172.31.66.57
        state: import
        target: "{{ item }}"
      loop:
